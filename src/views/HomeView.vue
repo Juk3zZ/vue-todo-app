@@ -1,9 +1,21 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import TodosTable from "../components/TodosTable.vue";
+import TodoPageHeader from "../components/TodoPageHeader.vue";
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="todo-page">
+    <TodoPageHeader />
+    <TodosTable />
+  </div>
 </template>
+
+<style lang="css" scoped>
+.todo-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  gap: 10px;
+}
+</style>
